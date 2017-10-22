@@ -15,3 +15,6 @@ Tras esto, es necesario dotar de estilos a estos paneles con **Bootstrap**.
 
 #### Version N° 1
 
+Esta version simplemente es el desarrollo del sitio web en visual estudio.
+
+Para ver mas informacion: 
