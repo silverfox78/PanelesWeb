@@ -17,4 +17,5 @@ Tras esto, es necesario dotar de estilos a estos paneles con **Bootstrap**.
 
 Esta version simplemente es el desarrollo del sitio web en visual estudio.
 
-Para ver mas informacion: 
+Para ver mas informacion: **[Ver](https://github.com/silverfox78/PanelesWeb/blob/master/WebVisualStudioV1/Readme.md)**
+
