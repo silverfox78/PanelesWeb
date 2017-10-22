@@ -31,3 +31,52 @@ Aunque no es necesario en este ejercicio, es una buena practica **"Definir la pa
 
 ---
 
+## Paso II
+
+En la vista de codigo de nuestra pagina tenemos algo asi:
+
+```html
+    <%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title></title>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+        <div>
+        
+        </div>
+        </form>
+    </body>
+    </html>
+```
+
+Para este caso, lo que hagamos debemos centrarnos en el contenido del cuerpo o el **BODY**, para ser mas especifico el contenido del formulario **<form id="form1" runat="server">**, es aqui donde trabajaremos...
+
+Nuestro segundo punto era disponer de algo para tomar una decision, en este caso usaremos un par de textos (**label's**) para poner en contexto a nuestros usuarios y de un combo (**dropdownlist**).
+
+Para ordenar estos elementos, los incrustaremos dentro de una tabla, por ello debemos iniciar agregando una tabla (**HTML**) en la pagina, para esto en el panel izquierdo de nuestra pantalla, en el **Cuadro de herramientas**, buscamos la seccion **HTML** y en ella **Table** y la arrastramos a nuestro formulario...
+
+Por defecto nos hara una tabla de tres por tres... Debemos acomodarla a nuestra necesidad, la dejaremos de dos columnas por una fila, tambien agregaremos un titulo a nuestra pagina.
+
+**Observacion :** Si bien el la cabera de nuestra pagina tenemos la seccion de titulo, no es malo mostrar al usuario de manera clara que esta viendo o donde esta.
+
+El cuerpo de nuestra pagina deberia ser similar al siguiente:
+
+```html
+    <h1>CIISA - Ejemplo paneles</h1>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+```
