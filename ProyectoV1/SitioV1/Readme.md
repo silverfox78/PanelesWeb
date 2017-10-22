@@ -81,3 +81,63 @@ El cuerpo de nuestra pagina deberia ser similar al siguiente:
     </form>
 ```
 
+En el primer **TD** es donde anexaremos el Label y en el segundo el DropDownList, para ello limpiaremos los espacios en blanco (**[&nbsp;]** es un espacio en blanco en html).
+
+```html
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem Selected="True" Value="0">Sin paneles</asp:ListItem>
+                        <asp:ListItem Value="1">Panel N°1</asp:ListItem>
+                        <asp:ListItem Value="2">Panel N°2</asp:ListItem>
+                    </asp:DropDownList></td>
+            </tr>
+        </table>
+```
+
+La tabla nos tuvo que haber quedado asi o similar... Para agregar los elementos del combo, se puede ir a la vista de **Diseño** de la pagina y eligir la opcion **Editar elementos**, en esa ventana simplemente agregamos nuestras opciones...
+
+Por si no lo imaginaron, la primera opcion es la que retorna a **Zero** nuestro formulario.
+
+**Observacion :** la opcion **Selected="True"** del primer **asp:ListItem** le dice al sistema que esa sera la opcion por defecto que se mostrara.
+
+## Paso III
+
+Agregamos los paneles al formulario, estos los ubicaremos bajo la tabla que agregamos, para diferenciarlos agregaremos a cada uno un titulo, una imagen y un boton cerrar... claramente cada panel para contener estos elementos debera disponer de una tabla, asi que la anaxaremos tambien... Los paneles se encuentran en la seccion de elementos **Estandar** del **Cuadro de herramientas**.
+
+```html
+        <asp:Panel ID="Panel1" runat="server">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <h1>Panel N°1</h1>
+                    </td>
+                    <td>
+                        <asp:Image ID="Image1" runat="server" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Cerrar" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+
+        <asp:Panel ID="Panel2" runat="server">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <h1>Panel N°1</h1>
+                    </td>
+                    <td>
+                        <asp:Image ID="Image2" runat="server" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="Cerrar" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+```
