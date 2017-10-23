@@ -16,7 +16,7 @@
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
                         <asp:ListItem Selected="True" Value="0">Sin paneles</asp:ListItem>
                         <asp:ListItem Value="1">Panel N°1</asp:ListItem>
                         <asp:ListItem Value="2">Panel N°2</asp:ListItem>

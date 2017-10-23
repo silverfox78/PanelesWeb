@@ -171,3 +171,29 @@ Como veremos, no tenermos un valor para el laber principal y se muestran los dos
         Me.Panel2.Visible = False
     End Sub
 ```
+
+Ahora anexamos los eventos, estos serian los asociados al combo y los botones, esto quedaria asi:
+
+```vb
+    Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
+        Dim indice As Integer = Integer.Parse(DropDownList1.SelectedValue)
+
+        Me.Panel1.Visible = False
+        Me.Panel2.Visible = False
+
+        Select Case indice
+            Case 1
+                Me.Panel1.Visible = True
+            Case 2
+                Me.Panel2.Visible = True
+        End Select
+    End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Panel1.Visible = False
+    End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Panel2.Visible = False
+    End Sub
+```
