@@ -104,6 +104,8 @@ Por si no lo imaginaron, la primera opcion es la que retorna a **Zero** nuestro 
 
 **Observacion :** la opcion **Selected="True"** del primer **asp:ListItem** le dice al sistema que esa sera la opcion por defecto que se mostrara.
 
+---
+
 ## Paso III
 
 Agregamos los paneles al formulario, estos los ubicaremos bajo la tabla que agregamos, para diferenciarlos agregaremos a cada uno un titulo, una imagen y un boton cerrar... claramente cada panel para contener estos elementos debera disponer de una tabla, asi que la anaxaremos tambien... Los paneles se encuentran en la seccion de elementos **Estandar** del **Cuadro de herramientas**.
@@ -115,9 +117,13 @@ Agregamos los paneles al formulario, estos los ubicaremos bajo la tabla que agre
                     <td>
                         <h1>Panel N°1</h1>
                     </td>
+                </tr>
+                <td>
                     <td>
                         <asp:Image ID="Image1" runat="server" />
                     </td>
+                </tr>
+                <td>
                     <td>
                         <asp:Button ID="Button1" runat="server" Text="Cerrar" />
                     </td>
@@ -129,15 +135,39 @@ Agregamos los paneles al formulario, estos los ubicaremos bajo la tabla que agre
             <table style="width: 100%;">
                 <tr>
                     <td>
-                        <h1>Panel N°1</h1>
+                        <h1>Panel N°2</h1>
                     </td>
+                </tr>
+                <td>
                     <td>
                         <asp:Image ID="Image2" runat="server" />
                     </td>
+                </tr>
+                <td>
                     <td>
                         <asp:Button ID="Button2" runat="server" Text="Cerrar" />
                     </td>
                 </tr>
             </table>
         </asp:Panel>
+```
+
+Para las imagenes, idealmente es necesario crear una carpeta para contenerlas y claro, disponer de ellas, en mi caso creo una carpeta llamada [**IMG**] y en ella dejo dos imagenes, luego los objetos **asp:Image** les asocio las imagenes segun corresponda...
+
+---
+
+## Paso IV
+
+Ahora que ya hemos agregados todos nuestros elementos visuales a la pagina, estos idealmente deberian responder a un MockUp... pero eso es harina de otro costal... Pasamos a la segunda parte de nuestro desarrollo, esta es definir que eventos tendra el sitio.
+
+En este punto, seria bueno ver como se ve el sitio... Para ello podemos presionar **F5** o bien iniciar el sitio (el boton verde de play).
+
+Como veremos, no tenermos un valor para el laber principal y se muestran los dos paneles, asi que le daremos algunos valores iniciales, algo similar a lo siguiente en nuestros code behind...
+
+```vb
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Me.Label1.Text = "Seleccione una opcion"
+        Me.Panel1.Visible = False
+        Me.Panel2.Visible = False
+    End Sub
 ```

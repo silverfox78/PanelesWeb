@@ -26,21 +26,43 @@
 
         <asp:Panel ID="Panel1" runat="server">
             <table style="width: 100%;">
-            <tr>
-                <td>
-                    <h1>Panel N°1</h1>
-                </td>
-                <td>
-                    <asp:Image ID="Image1" runat="server" />
-                </td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Text="Cerrar" />
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <td>
+                        <h1>Panel N°1</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/img/Octocat.png" Width="250" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Cerrar" />
+                    </td>
+                </tr>
+            </table>
         </asp:Panel>
 
-        <asp:Panel ID="Panel2" runat="server"></asp:Panel>
+        <asp:Panel ID="Panel2" runat="server">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <h1>Panel N°2</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/img/getbootstrap-card.png" Width="250"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="Cerrar" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
     </div>
     </form>
 </body>
