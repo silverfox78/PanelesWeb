@@ -26,3 +26,9 @@ Para ver mas informacion: **[Ver](https://github.com/silverfox78/PanelesWeb/blob
 Esta version integra al proyecto anterior algo de diseño Bootstrap
 
 Para ver mas informacion: **[Ver](https://github.com/silverfox78/PanelesWeb/blob/master/ProyectoV2/SitioV2/Readme.md)**
+
+---
+
+#### Version N° 3 - Pendiente
+
+Pretendo dejar un sitio exclusivo para lo que es front pensando en Bootstrap y dejar la logica a un servicio web...
