@@ -19,3 +19,10 @@ Esta version simplemente es el desarrollo del sitio web en visual estudio.
 
 Para ver mas informacion: **[Ver](https://github.com/silverfox78/PanelesWeb/blob/master/ProyectoV1/SitioV1/Readme.md)**
 
+---
+
+#### Version N° 2
+
+Esta version integra al proyecto anterior algo de diseño Bootstrap
+
+Para ver mas informacion: **[Ver](https://github.com/silverfox78/PanelesWeb/blob/master/ProyectoV2/SitioV2/Readme.md)**

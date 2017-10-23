@@ -21,9 +21,11 @@ Partial Class _Default
                 Me.Panel2.Visible = True
         End Select
     End Sub
+
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Panel1.Visible = False
     End Sub
+
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Panel2.Visible = False
     End Sub
